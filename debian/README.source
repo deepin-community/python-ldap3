@@ -1,0 +1,2 @@
+The upstream source package must be uploaded from PyPI, not github, as the
+version available on github includes many non-free RFCs.

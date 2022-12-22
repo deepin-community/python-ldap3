@@ -1,0 +1,31 @@
+Source: python-ldap3
+Maintainer: Debian Python Team <team+python@tracker.debian.org>
+Uploaders:
+ Brian May <bam@debian.org>,
+Section: python
+Priority: optional
+Build-Depends:
+ debhelper-compat (= 12),
+ dh-python,
+ python3-all,
+ python3-pyasn1 (>= 0.4.6),
+ python3-setuptools,
+Standards-Version: 4.5.0
+Vcs-Browser: https://salsa.debian.org/python-team/packages/python-ldap3
+Vcs-Git: https://salsa.debian.org/python-team/packages/python-ldap3.git
+Homepage: https://github.com/cannatag/ldap3
+
+Package: python3-ldap3
+Architecture: all
+Depends:
+ ${misc:Depends},
+ ${python3:Depends},
+Breaks:
+ python3-tldap (<< 0.3.8~),
+Description: Pure Python LDAP client library
+ A pure Python 3 LDAP version 3 strictly conforming to RFC4511 released under
+ the LGPL v3 open source license. RFC4511 is the current LDAP specification
+ (June 2006) from IETF and obsoletes the previous LDAP RFCs 2251, 2830, 3771
+ (December 1997)
+ .
+ This package contains the Python 3.x version of the library.
